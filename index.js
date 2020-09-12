@@ -2,24 +2,19 @@ const Discord = require('discord.js');
 const dotenv = require('dotenv');
 const log = require('loglevel');
 const fs = require('fs');
+const channels = require('./channels.json');
 
 dotenv.config();
 const client = new Discord.Client();
 const { BOT_TOKEN } = process.env;
-const channels = {
-    lowFidelity: '752936479948537960',
-    saesang: '752947524469522532',
-    ireneTesting: '754204934357909575',
-    welcome: '752947835925954682',
-};
 const PREFIX = '!';
 client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands/').filter((file) => file.endsWith('.js'));
 
-for (const file of commandFiles) {
+commandFiles.forEach(file => {
     const command = require(`./commands/${file}`);
     client.commands.set(command.name, command);
-}
+});
 
 log.setLevel('info');
 

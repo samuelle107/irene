@@ -6,5 +6,5 @@ module.exports = {
         const googleQuery = args.join('+');
 
         message.channel.send(baseUrl + googleQuery);
-    },
+    }
 };

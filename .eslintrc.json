@@ -17,6 +17,7 @@
         "global-require": 0,
         "import/no-dynamic-require": 0,
         "arrow-parens": 0,
-        "padding-line-between-statements": ["error", { "blankLine": "always", "prev": "*", "next": "return"}]
+        "padding-line-between-statements": ["error", { "blankLine": "always", "prev": "*", "next": "return"}],
+        "comma-dangle": ["error", "never"]
     }
 }
