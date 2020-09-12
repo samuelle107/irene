@@ -4,7 +4,7 @@ module.exports = {
     name: 'nickname',
     description: 'Change your nickname',
     async execute(message, args) {
-        const nickname = args.slice(0, 32).join(' ');
+        const nickname = args.join(' ').substring(0, 32);
 
         if (nickname) {
             try {
