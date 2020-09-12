@@ -7,7 +7,7 @@ module.exports = {
         const commands = message
             .client
             .commands
-            .map(({ name, description }) => `!${name} - ${description}`);
+            .map(({ name, description }) => `**!${name}** - ${description}`);
 
         const description = commands.join('\n');
 
