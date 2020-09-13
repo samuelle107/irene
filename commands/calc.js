@@ -5,6 +5,7 @@ module.exports = {
         const equation = args.join('').replace(/\s/g, '');
 
         try {
+            // eslint-disable-next-line no-eval
             const result = eval(equation);
             message.reply(`안녕! The result is **${result}**`);
         } catch (error) {
