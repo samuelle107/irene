@@ -18,7 +18,9 @@ module.exports = {
         ];
         const gif = spanks[Math.floor(Math.random() * spanks.length)];
 
-        message.channel.send(`사랑해, ${member}`);
+        if (member) {
+            message.channel.send(`사랑해, ${member}`);
+        }
         message.channel.send(gif);
     }
 };
