@@ -15,7 +15,8 @@ module.exports = {
             'https://tenor.com/view/chris-jericho-trish-stratus-spanking-wwe-wwf-gif-14318603',
             'https://tenor.com/view/trish-stratus-spanking-wwe-wrestling-stephanie-mcmahon-gif-14646610',
             'https://tenor.com/view/bad-beat-spank-punishment-gif-13569259',
-            'https://media1.tenor.com/images/963d3fcdc8ea8a05e31bd67b2e3aa213/tenor.gif'
+            'https://media1.tenor.com/images/963d3fcdc8ea8a05e31bd67b2e3aa213/tenor.gif',
+            'https://media.discordapp.net/attachments/752946494331551875/754887000737447946/tenor.gif'
         ];
         const gif = spanks[Math.floor(Math.random() * spanks.length)];
 
