@@ -17,4 +17,5 @@ Irene (아이린) is a South Korean singer, rapper, and actress from the Korean 
   - Run `eslint --init` at the root of the repository
 ### Deployment
 - Create a new branch and make a PR
-- All commits to master will be pushed to AWS.
+- Wait for me to approve it
+- All commits to master will be automatically be pushed to AWS.
