@@ -1,7 +1,7 @@
 # Irene
 ![Picture of Irene](https://pm1.narvii.com/6396/4f0d4fcaa801b9e0d34a03757e31044917451d1a_hq.jpg)
 <br/>
-Irene (아이린) is a South Korean singer, rapper, and actress from the Korean Girl Group Red Velvet. I really liked the song "Monster" by Irene and Seulgi, so that is where the name came from.
+Irene (아이린) is a South Korean singer, rapper, and actress from the Korean girl group, Red Velvet. I really liked the song "Monster" by Irene and Seulgi, so that is where the name came from.
 
 ## Setup
 ### Prerequisites
