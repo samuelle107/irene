@@ -5,7 +5,7 @@ Irene (아이린) is a South Korean singer, rapper, and actress from the Korean 
 
 ## Setup
 ### Prerequisites
-- Node and NPM
+- [Node.js](https://nodejs.org/en/)
 ### Installation
 - If you are on UNIX
   - Run `./setup.sh` at the root of the repository
