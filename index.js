@@ -5,7 +5,7 @@ const fs = require('fs');
 const channels = require('./channels.json');
 
 dotenv.config();
-const client = new Discord.Client();
+const client = new Discord.Client({ ws: { intents: 'GUILD_PRESENCES' } });
 const { BOT_TOKEN } = process.env;
 const PREFIX = '!';
 client.commands = new Discord.Collection();
@@ -20,7 +20,9 @@ log.setLevel('info');
 
 client.on('ready', () => {
     log.info('Irene has arrived!');
-    client.channels.cache.get(channels.ireneTestingChannelId).send('여보세요');
+    client.channels
+        .fetch(channels.ireneTestingChannelId)
+        .then(channel => channel.send('여보세요'));
 });
 
 client.on('message', (message) => {
