@@ -5,7 +5,7 @@ const fs = require('fs');
 const channels = require('./channels.json');
 
 dotenv.config();
-const client = new Discord.Client({ ws: { intents: 'GUILD_PRESENCES' } });
+const client = new Discord.Client({ ws: { intents: new Discord.Intents(Discord.Intents.ALL) } });
 const { BOT_TOKEN } = process.env;
 const PREFIX = '!';
 client.commands = new Discord.Collection();
@@ -48,7 +48,7 @@ client.on('guildMemberAdd', member => {
     const emoji = client.emojis.cache.get('753093093246369832');
     const welcomeMessage = `여보세요, <@${member.id}>! If you are caught leaking the server, you will be banned ${emoji}.`;
     const welcomeLink = 'https://thumbs.gfycat.com/EverySeveralIrishterrier-size_restricted.gif';
-    const newMemberRole = member.guild.roles.cache.find((role) => role.name === 'STAN GFRIEND');
+    const newMemberRole = member.guild.roles.cache.find((role) => role.name === 'STAN');
 
     member.guild.channels.cache.get(channels.welcomeChannelId).send(welcomeLink);
     member.guild.channels.cache.get(channels.welcomeChannelId).send(welcomeMessage);
